@@ -1,0 +1,15 @@
+streamlit
+requests
+json
+pandas
+numpy
+plotly.express 
+plotly.graph_objects 
+collections 
+re
+random
+time
+math  
+sklearn.ensemble  
+sklearn.model_selection   
+sklearn.metrics  
