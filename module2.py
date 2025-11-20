@@ -1598,7 +1598,7 @@ def render_lab3():
         key="c3_question"
     )
 
-    if st.button("What’s the #1 Problem?", type="primary", key="btn_c3_top_problem"):
+    if st.button("Ask AI Instructor", type="primary", key="btn_c3_top_problem"):
         if not question.strip():
             st.warning("Please ask a question.")
             return
@@ -1839,3 +1839,4 @@ def render_main_page():
 if __name__ == '__main__':
     render_ai_assistant_sidebar()
     render_main_page()
+
