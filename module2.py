@@ -330,7 +330,7 @@
 #     if not st.session_state.get("onboarding_done", False):
 #         st.session_state["onboarding_done"] = True
 #         st.toast("👋 Welcome to AI Collaboration Analytics Explorer! Let's get started!", icon="🚀")
-#         with st.popover("✨ **Welcome to the Collaboration Lab! Click Here to Start!** ✨", use_container_width=True):
+#         with st.popover("✨ **Welcome to the Collaboration Lab!** ✨", use_container_width=True):
 #             st.markdown("""
 #                 ### Here's Your Guided Flow:
 #                 1.  **Data Generation (C1):** Learn to create synthetic collaboration datasets. 📊
@@ -1166,7 +1166,7 @@ if 'progress' not in st.session_state:
     st.session_state.progress = {f'C{i}': '🔴' for i in range(1, 6)}
     st.session_state.journal = []
     st.session_state.current_tab = 'Intro'
-    st.session_state.guidance = "Welcome! Click the 🧭 Getting Started tab to begin."
+    st.session_state.guidance = "Welcome!"
     st.session_state.onboarding_done = False
     st.session_state.assistant_history = [
         {
@@ -1300,7 +1300,7 @@ def llm_call_cerebras(messages, model=DEFAULT_MODEL, max_tokens=300, temperature
 def show_onboarding_modal():
     if not st.session_state.get("onboarding_done", False):
         st.session_state["onboarding_done"] = True
-        with st.popover("✨ Welcome to the Collaboration Lab! Click to Start! ✨", use_container_width=True):
+        with st.popover("✨ Welcome to the Collaboration Lab!✨", use_container_width=True):
             st.markdown("""
                 ### 🌟 Your Mission:
                 You’re here to learn how to help students work better together — using AI as a tool for insight.
@@ -1839,4 +1839,5 @@ def render_main_page():
 if __name__ == '__main__':
     render_ai_assistant_sidebar()
     render_main_page()
+
 
