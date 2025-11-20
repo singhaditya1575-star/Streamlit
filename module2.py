@@ -27,7 +27,7 @@
 #     st.session_state.journal = []
 #     st.session_state.lab_results = {}
 #     st.session_state.current_tab = 'Intro'
-#     st.session_state.guidance = "Welcome! Click the **🧭 Getting Started** tab to begin your module." 
+#     st.session_state.guidance = "Welcome!" 
 #     st.session_state.c1_step = 1 
 #     st.session_state.c4_results = pd.DataFrame() 
 #     st.session_state.onboarding_done = False 
@@ -1839,5 +1839,6 @@ def render_main_page():
 if __name__ == '__main__':
     render_ai_assistant_sidebar()
     render_main_page()
+
 
 
